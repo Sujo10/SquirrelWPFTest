@@ -1,0 +1,29 @@
+﻿<Window x:Class="SquirrelWPFTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SquirrelWPFTest"
+        mc:Ignorable="d"
+        Title="Mystic Program V.1.1.8" Height="200" Width="800">
+    <Border Padding="50">
+        <StackPanel>
+            <TextBlock Text="Will you dare to click the Mysterious Button??" FontWeight="ExtraBold" Margin="0 10"></TextBlock>
+            <!-- Buttons -->
+            <Grid>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="InfoButton" Click="InfoButton_OnClick" Margin="0 0 10 0" Grid.Column="0" Content= "Info"></Button>
+                <Button x:Name="UploadButton" Click="UploadButton_OnClick" Grid.Column="1" Content="Mysterious Button"></Button>
+                <Button x:Name="CancelButton" Click="CancelButton_OnClick" Margin="10 0 0 0" Grid.Column="2" Content="Close"></Button>
+
+            </Grid>
+
+        </StackPanel>
+    </Border>
+</Window>
